@@ -4,16 +4,23 @@ import App from '../../container/root/App'
 // ! Routes
 import PublicRoutes from './public/PublicRoutes'
 import PrivateRoutes from './private/PrivateRoutes'
+// Redux
+import { Provider } from 'react-redux'
+import configureStore from '../redux/configureStorage'
+
+const store = configureStore({})
 
 const AppRouter = () => {
-  const login = false
+  const login = true
   return (
-    <App>
-      {login
-        ? <PrivateRoutes />
-        : <PublicRoutes />
-      }
-    </App>
+    <Provider store={store}>
+      <App>
+        {login
+          ? <PrivateRoutes />
+          : <PublicRoutes />
+        }
+      </App>
+    </Provider>
   )
 }
 
