@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import Login from '../../../components/Login/Login.component'
+import Login from '../../../container/public/Login/Login.component'
 import Error404 from '../../components/Error404'
 // Styles
 import { Layout } from 'antd';

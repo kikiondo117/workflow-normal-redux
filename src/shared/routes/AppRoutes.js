@@ -2,8 +2,8 @@ import React from 'react'
 // Components
 import App from '../../container/root/App'
 // ! Routes
-import PublicRoutes from './public/PublicRoutes'
-import PrivateRoutes from './private/PrivateRoutes'
+import PublicRoutes from './public/Public.routes'
+import PrivateRoutes from './private/Private.routes'
 // Redux
 import { Provider } from 'react-redux'
 import configureStore from '../redux/configureStorage'

@@ -1,6 +1,6 @@
 import React from 'react'
 // Components
-import Home from '../../../components/Home/Home.component'
+import Home from '../../../container/private/Home/Home.component'
 import Error404 from '../../components/Error404'
 import SideMenu from '../../components/SideMenu'
 // ! Routes
